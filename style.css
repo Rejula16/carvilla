@@ -7,6 +7,17 @@
     line-height: 28px;
 }
 
+.logo{
+    
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: Rufina,serif;
+    font-weight: 700;
+    /* padding: 45px 0; */
+    text-transform: uppercase;
+}
 .header::before {
     min-height: 100vh;
     width: 100%;
@@ -479,13 +490,40 @@ nav h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #171231;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    line-height: 5px;
+}
+
+.footer-row {
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-between;
+
+    flex-basis: 31%;
+    margin-inline-start: 12%;
+    margin-inline-end: 12%;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+     margin: 2%;
+    align-items: flex-start;
+   
 }
 
 .footer-col {
+
+    width: 450px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+
+/* .footer-col {
     flex-basis: 31%;
     margin-top: 5%;
     display: inline-block;
@@ -493,12 +531,42 @@ footer {
     margin: 2%;
     align-items: flex-start;
     width: 15%;
-}
+} */
 
 .footer-col h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .footer-col p {
-    font-size: 12px;
+    font-size: 16px;
+}
+.footer-col p a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fbfbfe;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-box {
+    background-color: #37384f; /* Gray background color */
+    color: #FFFFFF; /* White text color */
+    border: 1px solid #2d2c2c; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 4px; /* Padding inside the input box */
+    box-shadow: 0 2px 4px rgba(34, 24, 74, 0.1); /* Gray border shadow */
+    width: 200px; /* Adjust width as needed */
+    font-size: 16px;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #2c2a2a; /* Gray color for arrow */
+    pointer-events: none; /* Prevents icon from being selectable */
 }
