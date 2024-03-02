@@ -4,24 +4,20 @@
     font-family: Poppins, sans-serif;
     font-size: 18px;
     font-weight: 100;
-    /* color: #444a57; */
     line-height: 28px;
 }
 
 .header::before {
     min-height: 100vh;
     width: 100%;
-    /* background-color: linear-gradient(rgba(4,9,30,0.7)); */
     background-position: center;
     background-size: cover;
     position: absolute;
-
     content: "";
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-   
     background: linear-gradient(rgba(10, 22, 70, 0.7), rgba(10, 22, 70, 0.7));
 }
 
@@ -93,8 +89,22 @@ nav h2 {
     font-size: 20px;
 }
 
+.line {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 30px;
+    border-top: 3px solid rgb(50, 50, 200); /* You can adjust the color, width, and style */
+}
+
+.line-new {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 80px;
+    border-top: 2px solid rgb(50, 50, 200); /* You can adjust the color, width, and style */
+}
+
 .btn1 {
-    background-color: blue;
+    background-color: rgb(50, 50, 200);
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -140,8 +150,8 @@ nav h2 {
     margin: auto;
     text-align: center;
     padding-top: 100px;
-
-    ;
+    position: relative;
+    margin-top: 5%;
 
 }
 
@@ -216,37 +226,39 @@ nav h2 {
 
 .new-row {
     display: flex;
-    justify-content:baseline;
+    justify-content: baseline;
 
     margin-inline-start: 12%;
     margin-inline-end: 12%;
     margin-bottom: 5%;
- 
+
 }
 
-.new-col img{
-   width: 100%;
-   height: 100%;
-  
+.new-col img {
+    width: 100%;
+    height: 100%;
+
 }
+
 .new-col {
-    
+
     flex-basis: 31%;
     margin: 5%;
     overflow: hidden;
- 
-width: 100%;
-color: rgb(58, 57, 57);
-text-align: left;
+
+    width: 100%;
+    color: rgb(58, 57, 57);
+    text-align: left;
 
 }
 
 .new-text h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 4%;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: #444a57;
 }
+
 .new-col h2 {
     font-size: 32px;
     margin-bottom: 4%;
@@ -265,7 +277,7 @@ text-align: left;
 
 .card-col h2 {
     font-size: 24px;
-    
+
 }
 
 .card-col p {
@@ -282,8 +294,8 @@ text-align: left;
     justify-content: space-between;
 
     flex-basis: 31%;
-    margin-inline-start: 10%;
-    margin-inline-end: 10%;
+    margin-inline-start: 12%;
+    margin-inline-end: 12%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -338,11 +350,11 @@ text-align: left;
     color: #444a57;
     font-weight: 500;
     margin-top: 4%;
-   
+
     /* text-align: left; */
 }
 
-.card-heading a{
+.card-heading a {
     text-decoration: none;
 }
 
@@ -351,26 +363,19 @@ text-align: left;
     background-color: #fbfbfe;
 }
 
-.features h2{
-    font-size: 18px;
-    font-weight: 100;
-    color: #444a57;
-    font-family: Poppins, sans-serif;
-}
-/* .form-select select option{
-    font-size: 18px;
-    font-weight: 100;
-    color: #444a57;
-    font-family: Poppins, sans-serif;
-} */
-.form-style {
+.form-box {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    width: 65%;
+    z-index: 1;
+
+    /* temp */
+    
     background-color: #fbfbfe;
-    /* z-index: 1; */
-    /* margin-top: -60px;  */
-  
     border-radius: 8px;
     box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
-    width: 75%;
+    /* width: 75%; */
     /* height: 10%; */
     margin-left: 12.5%;
     font-weight: lighter;
@@ -380,24 +385,66 @@ text-align: left;
 
 }
 
+.form-box h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: #444a57;
+    font-family: Poppins, sans-serif;
 
-.form-select option{
-background-color: #b1b2b4;
 
+
+}
+
+/* .form-select select option{
+    font-size: 18px;
+    font-weight: 100;
+    color: #444a57;
+    font-family: Poppins, sans-serif;
+} */
+
+.form-select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    padding: 5px 10px;
+    margin: 2px 0;
+    font-weight: 100;
+    color: #444a57;
+    width: 100%;
+  
+}
+
+.form-select option {
+    background-color: #b1b2b4;
+    background-clip: padding-box;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: 1px solid  #b1b2b4;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    
 }
 
 .select-group {
     display: inline-block;
- margin-left: 4%;
+    margin-left: 4%;
+    /* margin-block: 5%; */
     justify-content: space-between;
    
+
 }
 
 .select-style {
     /* margin-bottom: 5px; */
     padding-top: 10px;
-    width: 240px;
+    max-width: 240px;
     /* display: flex; */
+    /* display: inline-block; */
 }
 
 .select-label {
